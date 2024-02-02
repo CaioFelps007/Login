@@ -9,7 +9,11 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'phpmyadmin',
     password: 'caio',
+<<<<<<< HEAD
     database: 'aplicacao',
+=======
+    database: 'mydb',
+>>>>>>> 56907710f78aa8a8fbcd07c9a2ca606a1f007dcd
 });
 
 db.connect((err) => {
@@ -31,7 +35,7 @@ app.use(
 
 // Configuração de pastas com aquivos estáticos
 //app.use('/img', express.static(__dirname + '/img'))
-app.use('/', express.static(__dirname + '/static'))
+app.use('/', express.static(__dirname + '/static/'))
 
 // Engine do Express para processar o EJS (templates)
 // Lembre-se que para uso do EJS uma pasta (diretório) 'views', precisa existir na raiz do projeto.
